@@ -1,6 +1,4 @@
 # Demo macro exec
-calc
-mkdir c:\windws
 ipconfig >> $env:temp\enum.txt
 netstat >> $env:temp\enum.txt
 whoami /priv >> $env:temp\enum.txt
